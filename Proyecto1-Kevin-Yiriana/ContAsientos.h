@@ -15,6 +15,9 @@ class ContAsientos {
 		void setFilAct(int);
 		void setColAct(int);
 		void ingresaAsiento(Asiento*);
+
+		string buscarAsientosConsecutivos(int cantidad);
+
 		void ocupadoEstado(string);
 		void seleccionadoEstado(string);
 		void disponibleEstado();

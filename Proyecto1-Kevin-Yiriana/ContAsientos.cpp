@@ -37,6 +37,49 @@ void ContAsientos::ingresaAsiento(Asiento* asient) {
 		filAct = 0;
 	}	
 }
+
+string ContAsientos::buscarAsientosConsecutivos(int cantidad) {
+	stringstream s;
+
+	// Recorrer las filas (6 en total)
+	for (int i = 0; i < 6; i++) {
+		int contador = 0;  // Contador de asientos consecutivos disponibles
+		string asientosDisponibles;  // Cadena para almacenar asientos consecutivos
+
+		// Recorrer las columnas (10 en total)
+		for (int j = 0; j < 10; j++) {
+			if (matrizA[i][j] != nullptr && matrizA[i][j]->getEstado() == 'V') {
+				// Si el asiento está disponible, lo agregamos a la cadena de asientos disponibles
+				asientosDisponibles += matrizA[i][j]->getIdentificador() + " ";
+				contador++;  // Incrementar contador
+			}
+			else {
+				// Si encontramos un grupo suficiente de asientos consecutivos
+				if (contador >= cantidad) {
+					// Agregar la cadena a la salida solo una vez
+					s << asientosDisponibles << " | ";
+				}
+				// Reiniciar el contador y la cadena de asientos
+				contador = 0;
+				asientosDisponibles.clear();
+			}
+		}
+
+		// Verificar si al final de la fila aún hay asientos disponibles
+		if (contador >= cantidad) {
+			s << asientosDisponibles << " | ";
+		}
+	}
+
+	// Si no se encontró ningún grupo de asientos consecutivos, devolver un mensaje
+	if (s.str().empty()) {
+		return "No hay asientos consecutivos disponibles.";
+	}
+
+	return s.str();
+}
+
+
 string ContAsientos::retornaEstIdent(string ident){
 stringstream s;
 	for (int i = 0; i < 6; i++)

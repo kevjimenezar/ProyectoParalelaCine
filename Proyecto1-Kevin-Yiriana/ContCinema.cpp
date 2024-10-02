@@ -46,6 +46,43 @@ string ContCinema::busquedaP(int op, string busq) {
 			}
 		}
 	}
+	else if (op == 7) { // Búsqueda de asientos consecutivos
+		int asientosBuscados = stoi(busq); 
+
+		s << "-------------- Buscando " << asientosBuscados << " asientos consecutivos disponibles --------------" << endl;
+
+		for (int i = 0; i < cant; i++) {
+			s << "----------------------SALA 1----------------------" << endl;
+			Sala* sala1 = vecC[i]->getSala1();
+
+			// Recorrer funciones de la sala
+			for (int j = 0; j < sala1->getCantidadFunciones(); j++) {
+				ContAsientos* asientos = sala1->getAsientos(j);  // Obtener la matriz de asientos
+				string asientosConsecutivos = asientos->buscarAsientosConsecutivos(asientosBuscados);
+
+				if (!asientosConsecutivos.empty()) {
+					s << sala1->getFuncion(j)->toString() << endl;
+					s << "Asientos consecutivos disponibles: " << asientosConsecutivos << endl;
+					s << "---------------------------------" << endl;
+				}
+			}
+
+			s << "----------------------SALA 2----------------------" << endl;
+			Sala* sala2 = vecC[i]->getSala2();
+
+			// Recorrer funciones de la sala
+			for (int j = 0; j < sala2->getCantidadFunciones(); j++) {
+				ContAsientos* asientos = sala2->getAsientos(j);
+				string asientosConsecutivos = asientos->buscarAsientosConsecutivos(asientosBuscados);
+
+				if (!asientosConsecutivos.empty()) {
+					s << sala2->getFuncion(j)->toString() << endl;
+					s << "Asientos consecutivos disponibles: " << asientosConsecutivos << endl;
+					s << "---------------------------------" << endl;
+				}
+			}
+		}
+	}
 	else {
 		s << "----------------------SALA 1----------------------" << endl;
 		for (int i = 0; i < cant; i++) {

@@ -21,5 +21,5 @@ public:
 	string buscaNombrePelicula(string, int, int);
 	string MuestraIdentificadores(string, int, int, string);
 	string toString();
-	
+	string buscarAsientosConsecutivos(Sala* sala, int numAsientos);
 };

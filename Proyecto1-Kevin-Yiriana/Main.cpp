@@ -4,12 +4,12 @@ using namespace std;
 
 
 void llenarAsientosAleatorios(ContAsientos* contAsientos) {
-	srand((unsigned)time(0));
+	unsigned int seed = time(0) + rand(); // Usa el tiempo actual y un valor aleatorio adicional
+	srand(seed); // Inicializa la semilla
 
 	for (int i = 0; i < 6; i++) {
 		for (int j = 0; j < 10; j++) {
 			Asiento* asiento = new Asiento();
-
 			int estadoAleatorio = rand() % 2; // 0 para 'V', 1 para 'R'
 			if (estadoAleatorio == 0) {
 				asiento->setEstado('V'); // Espacio Disponible o Vacío

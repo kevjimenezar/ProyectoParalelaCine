@@ -16,6 +16,12 @@ class Sala {
 
 		string getTipoSala();
 		void setTipoSala(string);
+
+		int getCantidadFunciones(); 
+		Funcion* getFuncion(int index);
+
+		ContAsientos* getAsientos(int index);
+
 		void ingresarFuncion(Funcion*);
 		void ingresaMatrizAsientos(ContAsientos*);
 		string buscaPeli(int, string);

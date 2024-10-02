@@ -21,7 +21,23 @@ Sala::~Sala(){
 string Sala::getTipoSala() { return tipoSala; }
 void Sala::setTipoSala(string tipSala){ tipoSala = tipSala; }
 
+int Sala::getCantidadFunciones() {
+	return cantF;
+}
 
+Funcion* Sala::getFuncion(int index) {
+	if (index >= 0 && index < cantF) {
+		return vecF[index];
+	}
+	return nullptr;
+}
+
+ContAsientos* Sala::getAsientos(int index) {
+	if (index >= 0 && index < cantA) {
+		return vecA[index];
+	}
+	return nullptr;
+}
 void Sala::ingresarFuncion(Funcion* ptrF) {
 	if (cantF < 3) {
 		vecF[cantF] = ptrF;
