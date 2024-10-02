@@ -12,10 +12,10 @@ void llenarAsientosAleatorios(ContAsientos* contAsientos) {
 
 			int estadoAleatorio = rand() % 2; // 0 para 'V', 1 para 'R'
 			if (estadoAleatorio == 0) {
-				asiento->setEstado('V'); // Vacío
+				asiento->setEstado('V'); // Espacio Disponible o Vacío
 			}
 			else {
-				asiento->setEstado('R'); // Reservado
+				asiento->setEstado('R'); // Espacio Reservado
 				asiento->setCedula("Ced-" + to_string(rand() % 10000 + 10000)); // Cedula aleatoria
 			}
 
@@ -299,14 +299,15 @@ int main() {
 						<< "1) Desea hacer la busqueda por genero?" << endl
 						<< "2) Desea hacer la busqueda por nombre?" << endl
 						<< "3) Desea hacer la busqueda por tipo? (Doblada o Subtitulada)" << endl
-						<< "4) Desea hacer la busqueda por dimenciones? (2D O 3D)" << endl
+						<< "4) Desea hacer la busqueda por dimensiones? (2D O 3D)" << endl
 						<< "5) Desea hacer la busqueda por sala? (VIP o Regular)" << endl
-						<< "6) Desea hacer la busqueda por tipo de publico? (Ninios o Adultos)" << endl
-						<< "7) Salir" << endl
+						<< "6) Desea hacer la busqueda por tipo de publico? (Infantil o Adultos)" << endl
+						<< "7) Desea hacer la busqueda por asientos consecutivos disponibles?" << endl
+						<< "8) Salir" << endl
 						<< "-------------------------------------------------------------------------------" << endl
 						<< "   Digite su opcion: ";
 					cin >> op;
-					if (op == 7) break;
+					if (op == 8) break;
 					cout << " Digite el dato de su busqueda: ";
 					cin.ignore();
 					getline(cin, busq);
@@ -321,7 +322,7 @@ int main() {
 					cin >> op;
 				} while (op == 1);
 				do {
-					if (op == 7) break;
+					if (op == 8) break;
 					cout << "\n\n---------------------------------Menu de compra de tickets-----------------------------------------" << endl;
 					cout << "Digite la sala que desea (1 o 2): ";
 					cin >> sal;
@@ -340,7 +341,7 @@ int main() {
 					}
 				} while (op == 2);
 				do {
-					if (op == 7) break;
+					if (op == 8) break;
 					system("CLS");
 					cout << "\n\n---------------------------------PANTALLA-----------------------------------------\n";
 					cout << CO->muestraMatrizA(ho, fecha, sal) << endl << endl;
@@ -375,7 +376,7 @@ int main() {
 						cin >> ced;
 						CO->estadoAsiento(ho, fecha, sal, selectA, 1, ced);
 						do {
-							if (op == 7) break;
+							if (op == 8) break;
 							cout << "Los asientos comprados son: " << cont << endl;
 							cout << "Digite la cantidad de tiquetes ninios que desea comprar: ";
 							cin >> tiquetNi;

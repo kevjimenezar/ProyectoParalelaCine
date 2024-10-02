@@ -28,6 +28,8 @@ bool ContCinema::verificaFecha(string fech) {
 }
 
 string ContCinema::busquedaP(int op, string busq) {
+
+	auto start = std::chrono::high_resolution_clock::now(); //Cronometro para medir el tiempo de búsqueda sin paralelizar
 	stringstream s;
 
 	if (op == 5) {
@@ -58,6 +60,12 @@ string ContCinema::busquedaP(int op, string busq) {
 				<< "---------------------------------" << endl;
 		}
 	}
+
+	//Se detiene el contador de tiempo y se calcula lo que duró la búsqueda sin paralelizar
+	auto end = std::chrono::high_resolution_clock::now();
+	std::chrono::duration<double> duration = end - start;
+	s << "TIEMPO DE BUSQUEDA SIN PARALELIZACION: " << duration.count() << " segundos" << endl;
+	s << "---------------------------------" << endl;
 	return s.str();
 }
 
