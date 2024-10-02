@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|solutionrelative:Proyecto1-Kevin-Yiriana\\ContAsientos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|G:\\kevjimenez\\ProyectoParalelaCine\\Proyecto1-Kevin-Yiriana\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|solutionrelative:Proyecto1-Kevin-Yiriana\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|G:\\kevjimenez\\ProyectoParalelaCine\\Proyecto1-Kevin-Yiriana\\ContCinema.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|solutionrelative:Proyecto1-Kevin-Yiriana\\ContCinema.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|G:\\kevjimenez\\ProyectoParalelaCine\\Proyecto1-Kevin-Yiriana\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|solutionrelative:Proyecto1-Kevin-Yiriana\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|G:\\kevjimenez\\ProyectoParalelaCine\\Proyecto1-Kevin-Yiriana\\ContCinema.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -36,14 +36,14 @@
               "RelativeDocumentMoniker": "Proyecto1-Kevin-Yiriana\\ContAsientos.cpp",
               "ToolTip": "G:\\kevjimenez\\ProyectoParalelaCine\\Proyecto1-Kevin-Yiriana\\ContAsientos.cpp",
               "RelativeToolTip": "Proyecto1-Kevin-Yiriana\\ContAsientos.cpp",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAwFAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAwEAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-02T21:45:15.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Main.cpp",
               "DocumentMoniker": "G:\\kevjimenez\\ProyectoParalelaCine\\Proyecto1-Kevin-Yiriana\\Main.cpp",
               "RelativeDocumentMoniker": "Proyecto1-Kevin-Yiriana\\Main.cpp",
@@ -56,13 +56,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ContCinema.cpp",
               "DocumentMoniker": "G:\\kevjimenez\\ProyectoParalelaCine\\Proyecto1-Kevin-Yiriana\\ContCinema.cpp",
               "RelativeDocumentMoniker": "Proyecto1-Kevin-Yiriana\\ContCinema.cpp",
               "ToolTip": "G:\\kevjimenez\\ProyectoParalelaCine\\Proyecto1-Kevin-Yiriana\\ContCinema.cpp",
               "RelativeToolTip": "Proyecto1-Kevin-Yiriana\\ContCinema.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowDwAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowDwAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-02T20:20:59.973Z",
               "EditorCaption": ""
