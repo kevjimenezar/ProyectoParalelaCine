@@ -301,7 +301,7 @@ int main() {
 						<< "3) Desea hacer la busqueda por tipo? (Doblada o Subtitulada)" << endl
 						<< "4) Desea hacer la busqueda por dimensiones? (2D O 3D)" << endl
 						<< "5) Desea hacer la busqueda por sala? (VIP o Regular)" << endl
-						<< "6) Desea hacer la busqueda por tipo de publico? (Infantil o Adultos)" << endl
+						<< "6) Desea hacer la busqueda por tipo de publico? (Ninios o Adultos)" << endl
 						<< "7) Desea hacer la busqueda por asientos consecutivos disponibles?" << endl
 						<< "8) Salir" << endl
 						<< "-------------------------------------------------------------------------------" << endl
