@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Kevin\\OneDrive\\Escritorio\\Universidad\\CICLO 8\\PrograParalela\\Proyecto\\Opciones\\Proyecto1-Kevin-Yiriana\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|C:\\Users\\Kevin\\OneDrive\\Escritorio\\Universidad\\CICLO 8\\PrograParalela\\Proyecto\\Opciones\\Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|solutionrelative:Proyecto1-Kevin-Yiriana\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|C:\\Users\\Kevin\\OneDrive\\Escritorio\\Universidad\\CICLO 8\\PrograParalela\\Proyecto\\Opciones\\Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana\\ContCinema.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|solutionrelative:Proyecto1-Kevin-Yiriana\\ContCinema.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|C:\\Users\\Kevin\\OneDrive\\Escritorio\\Universidad\\CICLO 8\\PrograParalela\\Proyecto\\Opciones\\Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|solutionrelative:Proyecto1-Kevin-Yiriana\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD1BAB72-3735-425F-BBF1-717151DF3EEC}|Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana.vcxproj|C:\\Users\\Kevin\\OneDrive\\Escritorio\\Universidad\\CICLO 8\\PrograParalela\\Proyecto\\Opciones\\Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana\\Pelicula.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -101,13 +101,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ContCinema.cpp",
               "DocumentMoniker": "C:\\Users\\Kevin\\OneDrive\\Escritorio\\Universidad\\CICLO 8\\PrograParalela\\Proyecto\\Opciones\\Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana\\ContCinema.cpp",
               "RelativeDocumentMoniker": "Proyecto1-Kevin-Yiriana\\ContCinema.cpp",
               "ToolTip": "C:\\Users\\Kevin\\OneDrive\\Escritorio\\Universidad\\CICLO 8\\PrograParalela\\Proyecto\\Opciones\\Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana\\ContCinema.cpp",
               "RelativeToolTip": "Proyecto1-Kevin-Yiriana\\ContCinema.cpp",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIoAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAI0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-02T20:20:59.973Z",
               "EditorCaption": ""
@@ -166,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\Kevin\\OneDrive\\Escritorio\\Universidad\\CICLO 8\\PrograParalela\\Proyecto\\Opciones\\Proyecto1-Kevin-Yiriana\\Proyecto1-Kevin-Yiriana\\Main.cpp",
               "RelativeDocumentMoniker": "Proyecto1-Kevin-Yiriana\\Main.cpp",

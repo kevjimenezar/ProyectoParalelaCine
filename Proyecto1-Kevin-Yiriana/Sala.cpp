@@ -64,6 +64,7 @@ void Sala::cambiaEstado(int ho, string ident,int est, string ced) {
 	}
 }
 
+// Funcion para verificar el tipo de busqueda y realizarla
 string Sala::buscaPeli(int op, string busq) {
 	stringstream s;
 	if (op == 6) {

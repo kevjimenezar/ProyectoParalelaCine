@@ -33,28 +33,28 @@ string ContCinema::busquedaP(int op, string busq) {
 	stringstream s;
 	#pragma omp parallel
 	{
-		if (op == 5) {
+		if (op == 5) {   //Busqueda por tipo de Sala
 			#pragma omp single 
 			s << "----------------------SALA 1----------------------" << endl;
 
 			#pragma omp parallel for
-			for (int i = 0; i < cant; i++) {
-				if (vecC[i]->getSala1()->getTipoSala() == busq) {
+			for (int i = 0; i < cant; i++) {     //Se recorren todos los Cines para Sala 1
+				if (vecC[i]->getSala1()->getTipoSala() == busq) {   //Se verifica si la busqueda coincide
 					#pragma omp critical
 					{
-						s << vecC[i]->getSala1()->toString();
+						s << vecC[i]->getSala1()->toString();   //Se guarda la informacion de la sala para mostrarla
 					}
 				}
 			}
 			#pragma omp single 
 			s << "----------------------SALA 2----------------------" << endl;
 
-			#pragma omp parallel for
-			for (int i = 0; i < cant; i++) {
-				if (vecC[i]->getSala2()->getTipoSala() == busq) {
+			#pragma omp parallel for   
+			for (int i = 0; i < cant; i++) {   //Se recorren todos los Cines para Sala 2
+				if (vecC[i]->getSala2()->getTipoSala() == busq) {   //Se verifica si la busqueda coincide
 					#pragma omp critical
 					{
-						s << vecC[i]->getSala2()->toString();
+						s << vecC[i]->getSala2()->toString();   //Se guarda la informacion de la sala para mostrarla
 					}
 				}
 			}
@@ -66,8 +66,8 @@ string ContCinema::busquedaP(int op, string busq) {
 			s << "-------------- Buscando " << asientosBuscados << " asientos consecutivos disponibles --------------" << endl;
 
 			#pragma omp for
-			for (int i = 0; i < cant; i++) {
-				stringstream localStream;
+			for (int i = 0; i < cant; i++) {  //Se recorren los Cines
+				stringstream localStream;  //Se crea un stringstream local para evitar continuos ingresos a la zona critica
 
 				localStream << "----------------------SALA 1----------------------" << endl;
 				Sala* sala1 = vecC[i]->getSala1();
@@ -75,7 +75,7 @@ string ContCinema::busquedaP(int op, string busq) {
 				// Recorrer funciones de la sala
 				for (int j = 0; j < sala1->getCantidadFunciones(); j++) {
 					ContAsientos* asientos = sala1->getAsientos(j);  // Obtener la matriz de asientos
-					string asientosConsecutivos = asientos->buscarAsientosConsecutivos(asientosBuscados);
+					string asientosConsecutivos = asientos->buscarAsientosConsecutivos(asientosBuscados); //Funcion para la busqueda de asientos consecutivos
 
 					if (!asientosConsecutivos.empty()) {
 						localStream << sala1->getFuncion(j)->toString() << endl;
@@ -100,43 +100,43 @@ string ContCinema::busquedaP(int op, string busq) {
 				}
 				#pragma omp critical
 				{
-					s << localStream.str();
+					s << localStream.str(); // Se ingresan los datos para mostrar
 				}
 			}
 		}
-		else {
+		else {   // Otras busquedas
 			#pragma omp single
 			s << "----------------------SALA 1----------------------" << endl;
 			#pragma omp for
-			for (int i = 0; i < cant; i++) {
-				stringstream localStream;
+			for (int i = 0; i < cant; i++) {  //Se recorren los Cines para Sala 1
+				stringstream localStream;   //Se crea un stringstream local para evitar continuos ingresos a la zona critica
 				localStream << "Tipo de sala: " << vecC[i]->getSala1()->getTipoSala() << endl
-					<< vecC[i]->getSala1()->buscaPeli(op, busq)
+					<< vecC[i]->getSala1()->buscaPeli(op, busq)  // Funcion para verificar y realizar las diferentes busquedas
 					<< "---------------------------------" << endl;
 				#pragma omp critical
 				{
-					s << localStream.str();
+					s << localStream.str();   //Se ingresan los datos para mostrar
 				}
 			}
 			#pragma omp single
 			s << "----------------------SALA 2----------------------" << endl;
 			#pragma omp for
-			for (int i = 0; i < cant; i++) {
-				stringstream localStream;
+			for (int i = 0; i < cant; i++) {  //Se recorren los Cines para Sala 2
+				stringstream localStream;   //Se crea un stringstream local para evitar continuos ingresos a la zona critica
 				localStream << "Tipo de sala: " << vecC[i]->getSala2()->getTipoSala() << endl
-					<< vecC[i]->getSala2()->buscaPeli(op, busq)
+					<< vecC[i]->getSala2()->buscaPeli(op, busq)  // Funcion para verificar y realizar las diferentes busquedas
 					<< "---------------------------------" << endl;
 				#pragma omp critical
 				{
-					s << localStream.str();
+					s << localStream.str();   //Se ingresan los datos para mostrar
 				}
 			}
 		}
 	}
 	//Se detiene el contador de tiempo y se calcula lo que duró la búsqueda paralelizada
 	double end = omp_get_wtime();
-	double duration = end - start;
-	double durationMili = (end - start) * 1e3; //Milisegundos
+	double duration = end - start;   //Se calcula en Segundos
+	double durationMili = (end - start) * 1e3; //Se calcula en Milisegundos
 	s << "TIEMPO DE BUSQUEDA CON PARALELIZACION: " << duration << " segundos   |   " << durationMili << " milisegundos" << endl;
 	s << "---------------------------------" << endl;
 	return s.str();
